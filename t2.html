@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>demo</title>
+	</head>
+
+	<body>
+		<script type="text/typescript">
+
+			class Animal {
+				 name:string; constructor(theName: string) { this.name = theName; };
+				  move(meters: number) { document.write(this.name + " moved " + meters + "m."); }
+	   } 
+			class Snake extends Animal { constructor(name: string) { super(name);  }
+			 move() { 
+			 	 document.write("Slithering...<br>"); 
+			   super.move(5); 
+			        }
+		 }
+		  var sam = new Snake("Python"); //声明Snake类 sam.move();
+		</script>
+		<script src="lib/typescript.min.js"></script>
+		<script src="lib/typescript.compile.min.js"></script>
+	</body>
+
+</html>
